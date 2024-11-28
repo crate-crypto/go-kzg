@@ -41,7 +41,7 @@ following commit: `017a8495f7671f5fff2075a9bfc9238c1a0982f8`
   version had a serialization bug.
   We only rely on gnark-crypto's underlying group operations and pairing code
   for bls12-381. For code that we do need to use, that has not been audited, we
-  have copied it into this library so that it can be a part of this libraries
+  have copied it into this library so that it can be a part of this library's
   audit. We have noted in the comments which functions we have done this for.
   
 
@@ -55,7 +55,7 @@ to only panic on startup; only methods which are called when we create the
 
 Because we use generics, the minimum golang version needs to be 1.18 or above. Since Golang only back ports security fixes to the latest version and one version behind latest, this library will at most be one version behind latest.
 
-Tests are ran against the 1.18, the current version and the latest version. If support for 1.18 is broken, we will update the CI to reflect this with a given reason.
+Tests are run against the 1.18, the current version and the latest version. If support for 1.18 is broken, we will update the CI to reflect this with a given reason.
 
 ## License
 
